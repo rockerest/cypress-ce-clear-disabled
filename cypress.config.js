@@ -1,5 +1,5 @@
 module.exports = {
   e2e: {
-    setupNodeEvents(on, config) {},
+		"includeShadowDom": true
   },
 }
