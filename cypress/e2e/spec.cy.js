@@ -8,6 +8,14 @@ describe('field', () => {
       .type( "input@input.input" );
   })
 
+  it('{selectall}{backspace} works', () => {
+    cy.visit('localhost:3000');
+
+    cy.get( "input" )
+      .type( "{selectall}{backspace}" )
+      .type( "input@input.input" );
+  })
+
   it('clear (actually) works', () => {
     cy.visit('localhost:3000');
 
